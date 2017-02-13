@@ -78,6 +78,10 @@ configure :build do
   activate :build_cleaner
 end
 
+data.flats.each do |owner, flat|
+  proxy "/flats/#{owner}.html", "/flats/show.html", :locals => { owner: owner, flat: flat}, :ignore => true
+end
+
 # Deployment
 activate :deploy do |deploy|
   deploy.method = :git

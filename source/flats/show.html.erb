@@ -1,0 +1,48 @@
+<div class="header-flat">
+<div class="container">
+<div class="row padded">
+  <div class="col-xs-12 col-md-6 col-md-offset-1">
+    <div class="header-flat-details">
+          <div class="header-flat-owner  text-center">
+            <%= image_tag flat.owner_picture, class:"avatar avatar-huge" %>
+            <p> <%= flat.owner_name %></p>
+          </div>
+          <div class="header-flat-name">
+            <h3> <%= flat.summary %> </h3>
+            <p> <%= flat.city %> </p>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #ffb400"></i>
+            <i class="fa fa-star" style="color: #cacccd"></i>
+          </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-4">
+      <form action="#">
+        <h4>Book this flat</h4>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-xs-6">
+              <input type="text" class="form-control" placeholder="checkin" id="checkin">
+            </div>
+            <div class="col-xs-6">
+              <input type="text" class="form-control" placeholder="checkout">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <select name="" id="guests" class="form-control">
+            <option value="1">1 guest</option>
+            <option value="2">2 guests</option>
+            <option value="3">3 guests</option>
+          </select>
+        </div>
+        <input type="submit" class="btn btn-danger" value="Book it" style="width: 100%">
+      </form>
+  </div>
+
+</div>
+</div>
+</div>

@@ -1,0 +1,10 @@
+<div class="text-center"> <h1>Meet The Team</h1> </div>
+<div class="row">
+  <% ['teodor', 'iva', 'stoyan', 'teodora'].each do |member| %>
+    <div class="col-xs-12 col-sm-6 col-md-3 text-center padded">
+      <h2> <%= member.capitalize %> </h2>
+      <%= image_tag "#{member}.png", class: "avatar-very-large" %>
+    </div>
+  <% end %>
+</div>
+<div class="padded text-center"> <%= mail_to "teodor.mavrodiev@gmail.com", "Contact Us" %> </div>
